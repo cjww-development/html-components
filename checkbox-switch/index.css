@@ -1,0 +1,25 @@
+.checkbox .container {
+  display: inline-block;
+  background-color: #1098F7;
+
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.checkbox .handle {
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+  margin: 3px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  transition: transform 300ms;
+}
+
+.checkbox input:checked+.container>.handle {
+  transform: translateX(24px);
+}
