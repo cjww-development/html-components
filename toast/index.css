@@ -1,0 +1,35 @@
+.toast {
+  display: flex;
+  align-items: center;
+
+  width: 256px;
+  height: 48px;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.message {
+  flex-grow: 1;
+  padding: 12px;
+}
+
+.close {
+  width: 6px;
+  height: 100%;
+
+  border-radius: 6px 0 0 6px;
+
+  background-color: #00b5fd;
+  cursor: pointer;
+
+  transition: width 300ms;
+
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+}
+
+.toast:hover > .close {
+  width: 36px;
+}
